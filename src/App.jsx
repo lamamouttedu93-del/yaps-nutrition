@@ -1,22 +1,26 @@
 import React from 'react';
-import Home from "@/pages/Home.jsx";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import { Helmet } from 'react-helmet';
 import { Toaster } from '@/components/ui/toaster';
-import { SupabaseAuthProvider } from '@/contexts/SupabaseAuthContext';
-import SubscriptionContext, { SubscriptionProvider, useSubscription } from "./contexts/SubscriptionContext.jsx";
-import { LanguageProvider } from '@/contexts/LanguageContext';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer'; // Import the new Footer component
-import Home from '@/pages/Home';
-import Onboarding from '@/pages/Onboarding';
-import Dashboard from '@/pages/Dashboard';
-import FoodJournal from '@/pages/FoodJournal';
-import Recipes from '@/pages/Recipes';
-import RecipeDetail from '@/pages/RecipeDetail';
-import MealPlanner from '@/pages/MealPlanner';
-import Subscriptions from '@/pages/Subscriptions';
-import Profile from '@/pages/Profile';
-import Legal from '@/pages/Legal';
+
+import { SupabaseAuthProvider } from '@/contexts/SupabaseAuthContext.jsx';
+import { SubscriptionProvider } from '@/contexts/SubscriptionContext.jsx';
+import { LanguageProvider } from '@/contexts/LanguageContext.jsx';
+
+import Navbar from '@/components/Navbar.jsx';
+import Footer from '@/components/Footer.jsx';
+
+import Home from '@/pages/Home.jsx';
+import Onboarding from '@/pages/Onboarding.jsx';
+import Dashboard from '@/pages/Dashboard.jsx';
+import FoodJournal from '@/pages/FoodJournal.jsx';
+import Recipes from '@/pages/Recipes.jsx';
+import RecipeDetail from '@/pages/RecipeDetail.jsx';
+import MealPlanner from '@/pages/MealPlanner.jsx';
+import Subscriptions from '@/pages/Subscriptions.jsx';
+import Profile from '@/pages/Profile.jsx';
+import Legal from '@/pages/Legal.jsx';
 
 function App() {
   return (
@@ -27,10 +31,15 @@ function App() {
             <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-indigo-900 flex flex-col">
               <Helmet>
                 <title>YapS - Smart Diet & Nutrition Tracking</title>
-                <meta name="description" content="Track your nutrition, plan meals, and achieve your health goals with our intelligent diet tracking app." />
+                <meta
+                  name="description"
+                  content="Track your nutrition, plan meals, and achieve your health goals with our intelligent diet tracking app."
+                />
               </Helmet>
+
               <Navbar />
-              <main className="flex-grow pt-16"> {/* Use flex-grow to push footer to bottom */}
+
+              <main className="flex-grow pt-16">
                 <Routes>
                   <Route path="/" element={<Home />} />
                   <Route path="/onboarding" element={<Onboarding />} />
@@ -44,7 +53,8 @@ function App() {
                   <Route path="/legal" element={<Legal />} />
                 </Routes>
               </main>
-              <Footer /> {/* Render the Footer component */}
+
+              <Footer />
               <Toaster />
             </div>
           </Router>
