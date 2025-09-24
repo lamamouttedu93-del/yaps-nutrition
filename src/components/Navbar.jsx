@@ -13,8 +13,10 @@ const Navbar = () => {
   const { user, signOut } = useAuth();
   const { subscription, isAdmin } = useSubscription();
   const location = useLocation();
-  const { language, setLanguage, t } = useLanguage();
-
+  // AVANT : const { language } = useLanguage();
+const { language = 'fr' } = useLanguage() || {};
+const langLabel = String(language || 'fr').toUpperCase();
+  
   const navigation = [
     { name: t('nav.dashboard'), href: '/dashboard', auth: true },
     { name: t('nav.journal'), href: '/journal', auth: true },
