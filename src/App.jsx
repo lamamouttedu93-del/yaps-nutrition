@@ -7,7 +7,7 @@ import SubscriptionContext, { SubscriptionProvider, useSubscription } from "./co
 import { LanguageProvider } from '@/contexts/LanguageContext';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer'; // Import the new Footer component
-import Home from '@/pages/Home';
+import Home from '@/pages/Home.jsx';
 import Onboarding from '@/pages/Onboarding';
 import Dashboard from '@/pages/Dashboard';
 import FoodJournal from '@/pages/FoodJournal';
