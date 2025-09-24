@@ -1,21 +1,16 @@
 <!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="generator" content="Hostinger Horizons" />
-  <meta name="theme-color" content="#6C49FF" />
-  <title>YapS</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="/manifest.webmanifest" type="application/manifest+json" />
+    <title>YapS — Nutrition & Bien-être</title>
+  </head>
+  <body>
+    <!-- ❗️Point de montage : l'ID doit correspondre à celui utilisé dans main.jsx -->
+    <div id="racine"></div>
 
-  <!-- Manifest injecté (description, orientation, catégories, screenshots) -->
-  <link rel="manifest" href="/manifest.webmanifest" type="application/manifest+json">
-</head>
-
-<body>
-    <!-- Point de montage de l'app -->
-  <div id="racine"></div>
-
-  <!-- Script d'entrée Vite (attention: chemin RELATIF, sans slash initial) -->
-  <script type="module" src="src/main.jsx"></script>
-</body>
+    <!-- ❗️Entrée Vite : chemin RELATIF (pas de / au début) -->
+    <script type="module" src="src/main.jsx"></script>
+  </body>
 </html>
