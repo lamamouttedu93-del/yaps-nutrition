@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from "@/pages/Home.jsx";
 import { Helmet } from 'react-helmet';
 import { Toaster } from '@/components/ui/toaster';
 import { SupabaseAuthProvider } from '@/contexts/SupabaseAuthContext';
