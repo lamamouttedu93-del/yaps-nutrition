@@ -124,3 +124,5 @@ export const useAuth = () => {
   }
   return context;
 };
+
+export default SupabaseAuthContext; /* ← ajoute juste cette ligne */
