@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { Toaster } from '@/components/ui/toaster';
 import { SupabaseAuthProvider } from '@/contexts/SupabaseAuthContext';
-import { SubscriptionProvider } from '@/contexts/SubscriptionContext';
+import SubscriptionContext, { SubscriptionProvider, useSubscription } from "./contexts/SubscriptionContext.jsx";
 import { LanguageProvider } from '@/contexts/LanguageContext';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer'; // Import the new Footer component
