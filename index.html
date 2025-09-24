@@ -12,19 +12,10 @@
 </head>
 
 <body>
-  <!-- ⚠️ Nécessaire pour afficher ton app -->
+    <!-- Point de montage de l'app -->
   <div id="racine"></div>
-  <script type="module" src="/src/main.jsx"></script>
 
-  <!-- Enregistrement du Service Worker (nécessaire pour PWABuilder) -->
-  <!--
-  <script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js?v=3', { scope: '/' }).catch(console.error);
-  });
-}
-  </script> 
-  -->
+  <!-- Script d'entrée Vite (attention: chemin RELATIF, sans slash initial) -->
+  <script type="module" src="src/main.jsx"></script>
 </body>
 </html>
