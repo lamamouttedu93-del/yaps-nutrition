@@ -1,22 +1,22 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import { Toaster } from '@/components/ui/toaster';
-import { SupabaseAuthProvider } from '@/contexts/SupabaseAuthContext';
-import { SubscriptionProvider } from '@/contexts/SubscriptionContext';
-import { LanguageProvider } from '@/contexts/LanguageContext';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer'; // Import the new Footer component
-import Home from '@/pages/Home';
-import Onboarding from '@/pages/Onboarding';
-import Dashboard from '@/pages/Dashboard';
-import FoodJournal from '@/pages/FoodJournal';
-import Recipes from '@/pages/Recipes';
-import RecipeDetail from '@/pages/RecipeDetail';
-import MealPlanner from '@/pages/MealPlanner';
-import Subscriptions from '@/pages/Subscriptions';
-import Profile from '@/pages/Profile';
-import Legal from '@/pages/Legal';
+import { Toaster } from './components/ui/toaster';
+import { SupabaseAuthProvider } from './contexts/SupabaseAuthContext';
+import { SubscriptionProvider } from './contexts/SubscriptionContext';
+import { LanguageProvider } from './contexts/LanguageContext';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer'; // Import the new Footer component
+import Home from './pages/Home';
+import Onboarding from './pages/Onboarding';
+import Dashboard from './pages/Dashboard';
+import FoodJournal from './pages/FoodJournal';
+import Recipes from './pages/Recipes';
+import RecipeDetail from './pages/RecipeDetail';
+import MealPlanner from './pages/MealPlanner';
+import Subscriptions from './pages/Subscriptions';
+import Profile from './pages/Profile';
+import Legal from './pages/Legal';
 
 function App() {
   return (
