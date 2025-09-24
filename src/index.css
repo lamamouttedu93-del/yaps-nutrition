@@ -1,0 +1,9 @@
+/* src/index.css — Tailwind (design d’origine) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* (facultatif) styles globaux si tu en avais avant
+:root { color-scheme: light dark; }
+body { margin: 0; }
+*/
