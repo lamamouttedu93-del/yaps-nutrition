@@ -1,0 +1,21 @@
+{
+  "name": "YapS — Nutrition & Bien-être",
+  "short_name": "YapS",
+  "description": "Suivi alimentaire, IMC/MB/ATEJ, recettes adaptées, plans & coach IA pour atteindre vos objectifs nutritionnels.",
+  "id": "/",
+  "start_url": "https://yaps.blog/",
+  "scope": "https://yaps.blog/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0E1020",
+  "theme_color": "#6C49FF",
+  "categories": ["health","fitness","food"],
+  "icons": [
+    { "src": "https://iili.io/Kasja7S.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "https://i.postimg.cc/CKvP4T4Q/Yap-S-icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "screenshots": [
+    { "src": "https://iili.io/KaL7bZN.jpg", "sizes": "1080x1920", "type": "image/jpeg", "form_factor": "narrow" },
+    { "src": "https://image.noelshack.com/fichiers/2025/39/2/1758596733-screen-landscape-1920x1080.jpg", "sizes": "1920x1080", "type": "image/jpeg", "form_factor": "wide" }
+  ]
+}

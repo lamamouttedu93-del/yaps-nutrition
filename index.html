@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="generator" content="Hostinger Horizons" />
+  <meta name="theme-color" content="#6C49FF" />
+  <title>YapS</title>
+
+  <!-- Manifest injecté (description, orientation, catégories, screenshots) -->
+  <link rel="manifest" href="/manifest.webmanifest" type="application/manifest+json">
+</head>
+
+<body>
+  <!-- ⚠️ Nécessaire pour afficher ton app -->
+  <div id="racine"></div>
+  <script type="module" src="/src/main.jsx"></script>
+
+  <!-- Enregistrement du Service Worker (nécessaire pour PWABuilder) -->
+  <!--
+  <script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js?v=3', { scope: '/' }).catch(console.error);
+  });
+}
+  </script>
+</body>
+</html>
