@@ -1,4 +1,4 @@
-// vite.config.js — alias "@" vers la RACINE du projet
+// vite.config.js — aliases propres vers src
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { fileURLToPath, URL } from 'node:url'
@@ -7,10 +7,10 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      // exemple: import App from "@/App.jsx"
-      '@': fileURLToPath(new URL('.', import.meta.url))
-      // si un jour tu déplaces tout dans /src, change en:
-      // '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      '/components': fileURLToPath(new URL('./src/components', import.meta.url)),
+      '/contexts': fileURLToPath(new URL('./src/contexts', import.meta.url)),
+      '/lib': fileURLToPath(new URL('./src/lib', import.meta.url))
     }
   },
   base: '/',
